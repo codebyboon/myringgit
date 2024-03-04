@@ -12,3 +12,23 @@ Cargo.lock
 
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
+
+# Ignore the node modules
+node_modules/
+.yarn/
+.yarn-cache/
+package-lock.json
+yarn.lock
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore tauri.conf.json to prevent leaking sensitive information, if necessary
+# tauri.conf.json
